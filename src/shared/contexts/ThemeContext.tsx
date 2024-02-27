@@ -28,13 +28,19 @@ export const AppThemeProvider: React.FC<{ children: ReactNode }> = ({ children }
         if (themeName === 'light') return LigthTheme;
 
         return DarkTheme;
-    },[themeName]);
+    }, [themeName]);
 
     return (
         <ThemeContext.Provider value={{ themeName, toggleTheme }}>
             <ThemeProvider theme={theme}>
-                <Box width="100vw" height="100vw" bgcolor={theme.palette.background.default}>
-                {children}
+                <Box
+                    width="100vw"
+                    height="100vh"
+                    bgcolor={theme.palette.background.default}
+                    top={0}
+                    left={0}
+                >
+                    {children}
                 </Box>
             </ThemeProvider>
         </ThemeContext.Provider>
