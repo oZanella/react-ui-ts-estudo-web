@@ -1,3 +1,3 @@
-export * from './Ligth';
+export * from './Light';
 
 export * from './Dark';
