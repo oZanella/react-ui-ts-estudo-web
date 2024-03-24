@@ -1,38 +1,53 @@
-import { Button, Box } from '@mui/material';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import { useDrawerContext, useAppThemeContext } from '../shared/contexts';
+import { useDrawerContext } from '../shared/contexts';
 import { useEffect } from 'react';
+import { Dashboard } from '../pages';
 
 export const AppRoutes = () => {
   const {setDrawerOptions} = useDrawerContext();
-  const { toggleTheme } = useAppThemeContext();
 
 
   useEffect(() => {
     setDrawerOptions([
       {
         icon: 'home',
-        path: '/pagina-inicial',
-        label: 'Página Inicial',
+        path: '/página-inicial',
+        label: 'Home',
       },
       {
-        icon: 'star',
-        path: '/cadastro',
+        icon: 'list',
+        path: '/cadastros',
         label: 'Cadastros',
       },
+      {
+        icon: 'payments',
+        path: '/financeiro',
+        label: 'Financeiro',
+      },
+      {
+        icon: 'payment',
+        path: '/compras',
+        label: 'Compras',
+      },
+      {
+        icon: 'store',
+        path: '/vendas',
+        label: 'Vendas',
+      },
+      {
+        icon: 'assessment',
+        path: '/relatórios',
+        label: 'Relatórios',
+      },
+
       
     ]);
   }, []);
 
   return (
     <Routes>
-      <Route path="/pagina-inicial" element={
-        <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
-    
-          <Button variant="contained" color='primary' onClick={toggleTheme}>Toggle Theme</Button>
-        </Box>
-      } />
+      <Route path="/pagina-inicial" element={<Dashboard />} />
       <Route path="*" element={<Navigate to="/pagina-inicial" />} />
     </Routes>
   );
