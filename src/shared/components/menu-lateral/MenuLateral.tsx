@@ -55,7 +55,7 @@ export const MenuLateral: React.FC<MenuLateralProps> = ({ children }) => {
           <Box width='100%' height={theme.spacing(20)} display="flex" alignItems="center" justifyContent="center">
             <Avatar
               sx={{ height: theme.spacing(12), width: theme.spacing(12) }}
-              src="https://lh3.googleusercontent.com/pw/AP1GczPAq2xctv5RaCC0WeokUCRC0mgZ6eCZwZGTutjEecBx5txZLo1WE_vEDfrpbn-vPgmE54WKbZ017If3xbJam1hwyzvN0etI3EsTXaQfBQJqI6w8SHbMletz9_Zzsooa1mmgA4zqX9fo4fO7b2-lm7ymDf8rKuy2AbeffqP5qot8fIXVPz46khxzPg93JGwQKz9wK1uCwhKFPyl9g-nS7rVGNE9dGHo_cwQN4seXl08_tN1DuUrM88s2VZTbL9TF3hh2IOMWrJp6NnHmC0xAAydHwsYW_6uHfwMJy3qtgCC2qeiKz8mrXbMuOEMwypxY8yoQoDno-V0wb6GSw-8Rdwdby3UnGFqXfB71HL_xpAS_ADQh8yhxunK7sCXsPupl4RYqXx5_DvdoTHMT67XOM7fjVDbj4LLc8PmLyaujNrNHjtJYfKQ7Q5CKFqYbBRUlNIre7tN1MPBueDiXzD6mmOAOCbv8tJhTunV3m427VYTVcWCbzDWDrVczHJ78faVkQVUuL0OGVEfuedutupQmk_SC505yp_u6arVF1EmOZBxy5lTKJKmNY2Qzdj6vGviv3vmpJH65CftgYwEPUL6V3VvMgJ0DeV5Pl-F_XqInFqGp3EbdVkmj00xEoSIwHFiY2iKTUMpQQD1DYnp3Q2H-ilARFnohThlRBe4wHVkQ5fmCdKw-5F7gMB09B6r86MWQQkawXcljW9oFxFNnwWstculGVtVh16TvYZNeQKK7WscwsqiIztgjdp-afhC2UGWNTXWxNmeNrRUwZ1Bpk0efHxyS1vzlGLtd14pcwGH5V8hb-whYiut8xqAdu61UAgQOVp4j4anddgdh-ZUWguZQh2sK8vZ1OMr5KSY3SVnyspn5oWstvbMoUijL0T0CNnQoeJ6Mw6gXg1KDpmRUmRQb6F5iZd8p=w1024-h1024-s-no-gm?authuser=0"
+              src="https://cdn.discordapp.com/attachments/1139152939164905594/1249856610222735360/avatar.png?ex=6668d32d&is=666781ad&hm=317255dd1142e6708a4e8c5a886c4385dfdf752c558f8a6c719c45e6c890e7ff&"
             />
           </Box>
 
