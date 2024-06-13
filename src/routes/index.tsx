@@ -12,7 +12,7 @@ export const AppRoutes = () => {
     setDrawerOptions([
       {
         icon: 'home',
-        path: '/página-inicial',
+        path: '/pagina-inicial',
         label: 'Home',
       },
       {
