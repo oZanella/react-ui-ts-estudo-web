@@ -55,7 +55,7 @@ export const MenuLateral: React.FC<MenuLateralProps> = ({ children }) => {
           <Box width='100%' height={theme.spacing(20)} display="flex" alignItems="center" justifyContent="center">
             <Avatar
               sx={{ height: theme.spacing(12), width: theme.spacing(12) }}
-              src="https://cdn.discordapp.com/attachments/1139152939164905594/1249856610222735360/avatar.png?ex=6668d32d&is=666781ad&hm=317255dd1142e6708a4e8c5a886c4385dfdf752c558f8a6c719c45e6c890e7ff&"
+              src="https://cdn.discordapp.com/attachments/1139152939164905594/1249856610222735360/avatar.png?ex=666c1eed&is=666acd6d&hm=15ed4d4265e5171c7fd2cb064bb4b4ecf01c827264f53e223e5d56f43dd44b4b&"
             />
           </Box>
 
