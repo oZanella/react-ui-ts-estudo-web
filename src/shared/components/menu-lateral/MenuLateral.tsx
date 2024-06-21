@@ -3,6 +3,7 @@ import { Avatar, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, List
 import { Box } from '@mui/system';
 import { useAppThemeContext, useDrawerContext } from '../../contexts';
 import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
+import AvatarPrincipal from './avatar.png';
 
 interface IListItemLinkProps {
   label: string;
@@ -55,7 +56,7 @@ export const MenuLateral: React.FC<MenuLateralProps> = ({ children }) => {
           <Box width='100%' height={theme.spacing(20)} display="flex" alignItems="center" justifyContent="center">
             <Avatar
               sx={{ height: theme.spacing(12), width: theme.spacing(12) }}
-              src="https://cdn.discordapp.com/attachments/1139152939164905594/1249856610222735360/avatar.png?ex=666c1eed&is=666acd6d&hm=15ed4d4265e5171c7fd2cb064bb4b4ecf01c827264f53e223e5d56f43dd44b4b&"
+              src={AvatarPrincipal}
             />
           </Box>
 
