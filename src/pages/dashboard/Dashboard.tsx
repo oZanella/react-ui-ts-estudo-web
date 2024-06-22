@@ -8,8 +8,7 @@ export const Dashboard = () => {
     <LayoutBaseDaPagina
       titulo='Página incial'
       FerramentasDaListagem={(
-        <FerramentasDeDetalhe
-        />
+        <FerramentasDeDetalhe />
       )}
     >
       Testando
