@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Icon, Paper, Skeleton, Typography, useTheme } from '@mui/material';
+import { Box, Button, Divider, Icon, Paper, Skeleton, Typography, useTheme, Theme, useMediaQuery } from '@mui/material';
 
 interface IFerramentasDeDetalheProps {
   textoBotaoNovo?: string;
@@ -36,6 +36,8 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
   aoCliclarEmApagar,
   aoCliclarEmSalvar,
 }) => {
+  const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
+  //const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('md')); //não esta sendo usando 
   const theme = useTheme();
 
   return (
@@ -90,7 +92,7 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
         )}
 
       {
-        (mostrarBotaoNovo && !mostrarBotaoNovoCarregando) && (
+        (mostrarBotaoNovo && !mostrarBotaoNovoCarregando && !smDown) && (
           <Button
             color='primary'
             disableElevation
@@ -104,13 +106,16 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
           </Button>
         )}
 
-      {
-        mostrarBotaoNovoCarregando && (
-          <Skeleton width={110} height={60} />
-        )
-      }
+      {(mostrarBotaoNovoCarregando && !smDown) && (
+        <Skeleton width={110} height={60} />
+      )}
 
-      <Divider variant='middle' orientation='vertical' />
+      {
+        (mostrarBotaoVoltar &&
+          (mostrarBotaoNovo || mostrarBotaoApagar || mostrarBotaoSalvar)  //se o botao voltar estiver true e todos os outros tambem, entao vai ser exibido o divier, caso contrario não
+        ) && (
+          <Divider variant='middle' orientation='vertical' />
+        )}
 
       {
         (mostrarBotaoVoltar && !mostrarBotaoVoltarCarregando) && (
