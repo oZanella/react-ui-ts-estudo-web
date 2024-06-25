@@ -112,7 +112,7 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
 
       {
         (mostrarBotaoVoltar &&
-          (mostrarBotaoNovo || mostrarBotaoApagar || mostrarBotaoSalvar)  //se o botao voltar estiver true e todos os outros tambem, entao vai ser exibido o divier, caso contrario não
+          (mostrarBotaoNovo || mostrarBotaoApagar || mostrarBotaoSalvar)  //se o botao voltar estiver true entao vai ser exibido o divier, caso contrario não
         ) && (
           <Divider variant='middle' orientation='vertical' />
         )}
