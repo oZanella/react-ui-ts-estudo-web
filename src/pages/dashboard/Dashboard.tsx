@@ -11,7 +11,7 @@ export const Dashboard = () => {
         <FerramentasDeDetalhe />
       )}
     >
-      Testando
+      Restante da pagina
     </LayoutBaseDaPagina>
   );
 };  
