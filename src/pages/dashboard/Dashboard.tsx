@@ -11,7 +11,7 @@ export const Dashboard = () => {
         <FerramentasDeDetalhe />
       )}
     >
-      Restante da pagina
+      Em desenvolvimento...
     </LayoutBaseDaPagina>
   );
 };  
