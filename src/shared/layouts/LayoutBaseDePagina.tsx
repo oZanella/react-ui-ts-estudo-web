@@ -2,13 +2,13 @@ import { Box, Icon, IconButton, Theme, Typography, useMediaQuery, useTheme } fro
 import React, { ReactNode } from 'react';
 import { useDrawerContext } from '../contexts';
 
-interface ILayoutBaseDaPaginaprops {
-  children: ReactNode;
+interface ILayoutBaseDePaginaProps {
   titulo: string;
-  FerramentasDaListagem: ReactNode;
+  children: ReactNode;
+  barraDeFerramentas?: ReactNode;
 }
 
-export const LayoutBaseDaPagina: React.FC<ILayoutBaseDaPaginaprops> = ({ children, titulo, FerramentasDaListagem }) => {
+export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({ children, titulo, barraDeFerramentas }) => {
   const theme = useTheme();
   const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
   const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('md'));
@@ -33,9 +33,9 @@ export const LayoutBaseDaPagina: React.FC<ILayoutBaseDaPaginaprops> = ({ childre
         </Typography>
       </Box>
 
-      {FerramentasDaListagem && (
+      {barraDeFerramentas && (
         <Box>
-          {FerramentasDaListagem}
+          {barraDeFerramentas}
         </Box>
       )}
 

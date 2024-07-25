@@ -1,17 +1,17 @@
 import { FerramentasDeDetalhe } from '../../shared/components';
-import { LayoutBaseDaPagina } from '../../shared/layouts';
+import { LayoutBaseDePagina } from '../../shared/layouts/LayoutBaseDePagina';
 
 
 export const Dashboard = () => {
 
   return (
-    <LayoutBaseDaPagina
+    <LayoutBaseDePagina
       titulo='Página incial'
-      FerramentasDaListagem={(
+      barraDeFerramentas={(
         <FerramentasDeDetalhe />
       )}
     >
       Em desenvolvimento...
-    </LayoutBaseDaPagina>
+    </LayoutBaseDePagina>
   );
 };  
